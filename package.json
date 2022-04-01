@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-foreman/README-Generator.git"
+  },
+  "author": "Kevin Foreman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevin-foreman/README-Generator/issues"
+  },
+  "homepage": "https://github.com/kevin-foreman/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}

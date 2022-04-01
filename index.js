@@ -1,4 +1,5 @@
 const readmeDataArgs = process.argv.slice(2, process.argv.length);
+const inquirer = require(inquirer);
 
 
 // const title = readmeDataArgs[0];
