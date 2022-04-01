@@ -1,53 +1,62 @@
 const readmeDataArgs = process.argv.slice(2, process.argv.length);
-const inquirer = require(inquirer);
+const fs = require('fs');
+const inquirer = require('inquirer');
 
 
 // const title = readmeDataArgs[0];
 // const description = readmeDataArgs[1];
 // destructured the above
 
-// set an array of arrays to hold each section header
-const [title,
-        description,
-        tableContents,
-        // [
-        // tableInstallation,
-        // tableUsage,
-        // tableLicense,
-        // tableContributors,
-        // tableTests,
-        // tableQuestions
-        // ],
-        installation,
-        usage,
-        license,
-        contributors,
-        tests,
-        questions
-        ] = readmeDataArgs;
+// TODO: Create an array of questions for this application
+const questions = [];
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    return fs.writeToFile ('README.md')
+};
+
+// TODO: Create function to initialize the app
+function init() {
+
+}
 
 // Generate README by creating a .md file
 
 // Add line breaks so the code is more readable
 const generateReadme = (title, description) => {
     return `
-    # ${title}
+    # Title
+    ${title}
 
-    ## ${description}
+    ## Description
+    ${description}
 
-    ## ${tableContents}
+    ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * License
+    * Contributors
+    * Tests
+    * Questions   
+    ${tableOfContents}
 
-    ## ${installation}
+    ## Installation
+    ${installation}
 
-    ## ${usage}
+    ## Usage
+    ${usage}
 
-    ## ${license}
+    ## License
+    ${license}
 
-    ## ${contributors}
+    ## Contributors
+    ${contributors}
 
-    ## ${tests}
-
-    ## ${questions}
+    ## Tests
+    ${tests}
+    // Contact information (email address) of the developer
+    ## Questions
+    ${questions}
     `;
 }
 
