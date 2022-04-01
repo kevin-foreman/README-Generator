@@ -1,10 +1,15 @@
+const fs = require('fs');
+const { fstat } = require("fs");
+const generateMarkdown = require(g);
+
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if(license != '') {
-
+    return false;
     } else {
-        ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+        // ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
     };
 
 };
@@ -23,6 +28,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+
 function generateMarkdown(data) {
     return `
     # Title
@@ -58,26 +64,16 @@ function generateMarkdown(data) {
     ## Questions
     ${questions}
     `;
-}
+};
 
-module.exports = generateMarkdown;
-
-
-
-const { fstat } = require("fs")
-
-const generateMarkdown = require(g)
 
 function renderLicense(license) {
     if(license != 'None') {
-        }else{
+        } else {
 
         }
 }
 
-function generateMarkdown(data) {
-    return `
-    `
-}
+module.exports = { writeFile, copyFile };
 
 fstat.writeFile

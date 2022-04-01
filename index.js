@@ -1,11 +1,21 @@
 const readmeDataArgs = process.argv.slice(2);
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./src/generateMarkdown')
 
 
 
 // TODO: Create an array of questions for this application
-const questions = [
+const promptQuestions = readmeData => {
+    if (!readmeData.sections) {
+        readmeData.sections = [];
+    }
+    console.log(`
+    =================
+    Build your README
+    =================
+    `);
+    return inquirer.prompt([
     {
         type: 'input',
         name: 'title',
@@ -14,7 +24,8 @@ const questions = [
         if (nameInput) {
             return true;
         } else {
-            console.log("Please enter the name of the project")
+            console.log("Please enter the name of the project");
+            return false;
         }
     };
     };
@@ -28,9 +39,16 @@ const questions = [
         } else {
             console.log('Please enter a brief description of your project');
             return false;
-        }
-    }
-    }
+        };
+    };
+    };
+    // '## Table of Contents',
+    // '* [Installation](#installation)',
+    // '* [Usage](#usage)',
+    // '* [License](#license)',
+    // '* [Contributors](#contributors)',
+    // '* [Tests](#tests)',
+    // '* [Questions](#questions)'
     {
         type: 'input',
         name: 'installation',
@@ -58,8 +76,16 @@ const questions = [
     }
     {
         type: 'input',
+        name: 'tests',
+        message: 'Enter any testing you have done in your project'
     }
-];
+    {
+        type: 'inpuit',
+        name: 'questions',
+        message: 'Enter your email address to add a way to contact you with questions'
+    }
+])
+};
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -73,7 +99,7 @@ function init() {
 
 
 console.log(title, description);
-console.log(generateReadme(title, description));
+console.log(generateMarkdown(title, description));
 
 
 
