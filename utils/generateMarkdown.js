@@ -40,7 +40,7 @@ const fs = require('fs');
 //         }
 // }
 
-// TODO: Create a function to generate markdown for README
+// This function should generate markdown for README
 
 const generateMarkdown = readMeArr => {
     return `
@@ -48,7 +48,7 @@ const generateMarkdown = readMeArr => {
         .map(({ title, description, installation, usage, license, contributors, tests, questions }) => {
         return `
     # Title
-    ${data.title.join}
+    ${data.title}
 
     ## Description
     ${data.description}
@@ -60,10 +60,10 @@ const generateMarkdown = readMeArr => {
     * [Contributors](#contributors)
     * [Tests](#tests)
     * [Questions](#questions)   
-    ${data.tableOfContents.join}
+    ${data.tableOfContents}
 
     ## Installation
-    ${data.installation.join}
+    ${data.installation}
 
     ## Usage
     ${data.usage}
@@ -80,24 +80,28 @@ const generateMarkdown = readMeArr => {
     ## Questions
     ${data.questions}
     }})
+    ${generateMarkdown(fileData)} 
     `;
+    
 })
+
     .join('')}
-    `;   
+    `;
+      
 };
 
-// TODO: Create a function to write README file
+// This function should write README file and rejects the promis if there is an error
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('./utils/readme.md', fileContent, err => {
+        fs.writeFile('./readme.md', fileContent, err => {
             // if there is an error, reject the Promise and send the error
             if (err) {
                 reject(err);
-                // return our of the function to stop the process
+                // return out of the function to stop the process
                 return;
             }
 
-            // if all is well, resolve the promise
+            // if all good, resolve the promise
             resolve({
                 ok: true,
                 message: 'File created'
@@ -107,20 +111,8 @@ const writeFile = fileContent => {
 };
 
 
+// module.exports = generateMarkdown => { writeFile
+// const { fileData, title, description, installation, usage, license, contributors, tests, questions } = generateMarkdown;
 
-
-
-module.exports = generateMarkdown => {};
-
-
-// => {
-//     console.log(templateData);
-//     const { title, description, installation, usage, license, contributors, tests, questions } = readmeData;
-//     const generateFile = readmeArr => {
-//         if (!readmeArr) {
-//             return '';
-//         }
-//     }
-// }
-
-// fstat.writeFile
+//     if (!fileData)
+// };

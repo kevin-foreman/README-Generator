@@ -1,5 +1,6 @@
 // const readmeDataArgs = process.argv.slice(2);
-// const { fstat } = require("fs");
+
+
 // add in all the dependencies
 const { writeFile, copyFile } = require('./utils/generateMarkdown.js');
 const inquirer = require('inquirer');
@@ -11,8 +12,8 @@ const generateFile = require('./utils/generateMarkdown.js');
 // This will create an array of questions for the application
 const promptQuestions = fileData => {
     
-    if (!fileData.sections) {
-        fileData.sections = [];
+    if (!fileData) {
+        fileData = [];
     }
     console.log(`
     =================
@@ -79,10 +80,11 @@ const promptQuestions = fileData => {
         message: 'Enter your email address to add a way to contact you with questions'
     }
 ])
-//  .then(readmeData => {
-//     fileData.sections.push(readmeData);
-//        return fileData;
-//  }
+  .then(readmeData => {
+     fileData.push(readmeData);
+        return fileData;
+
+})
 };
 
 
@@ -104,11 +106,11 @@ promptQuestions()
     .catch(err => {
         // console.log(err);
     })
-console.log(readmeData);
+// console.log(readmeData);
+
+// console.log(fileData);
 
 
-
-// console.log(generateMarkdown(title, description));
 
 
 
