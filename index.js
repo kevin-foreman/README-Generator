@@ -1,17 +1,18 @@
 // const readmeDataArgs = process.argv.slice(2);
 // const { fstat } = require("fs");
-// const { writeFile, copyFile } = require('./utils/generateMarkdown.js');
+// add in all the dependencies
+const { writeFile, copyFile } = require('./utils/generateMarkdown.js');
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateFile = require('./utils/generateMarkdown.js');
 
 
 
-// TODO: Create an array of questions for this application
-const promptQuestions = () => {
+// This will create an array of questions for the application
+const promptQuestions = fileData => {
     
-    // if (!readmeData.sections) {
-    //     readmeData.sections = [];
+    if (!fileData.sections) {
+        fileData.sections = [];
     }
     console.log(`
     =================
@@ -46,13 +47,6 @@ const promptQuestions = () => {
         };
     }
     },
-    // '## Table of Contents',
-    // '* [Installation](#installation)',
-    // '* [Usage](#usage)',
-    // '* [License](#license)',
-    // '* [Contributors](#contributors)',
-    // '* [Tests](#tests)',
-    // '* [Questions](#questions)'
     {
         type: 'input',
         name: 'installation',
@@ -85,42 +79,32 @@ const promptQuestions = () => {
         message: 'Enter your email address to add a way to contact you with questions'
     }
 ])
-// };
-
-// TODO: Create a function to write README file
-const writeFile = (fileName, data) => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('./utils/index.js', fileName, data, err => {
-            // if there is an error, reject the Promise and send the error
-            if (err) {
-                reject(err);
-                // return our of the function to stop the process
-                return;
-            }
-
-            // if all is well, resolve the promise
-            resolve({
-                ok: true,
-                message: 'File created'
-            });
-        });
-    });
+//  .then(readmeData => {
+//     fileData.sections.push(readmeData);
+//        return fileData;
+//  }
 };
 
+
+// function to initialize the app
 promptQuestions()
-.then(readmeData => {
-    return generateMarkdown(readmeData);
+.then(fileData => {
+    return generateFile(fileData);
     })
     .then(readmeData => {
         return writeFile('Readme.md');
     })
+    .then(writeFileResponse => {
+        // console.log(writeFileResponse);
+        return copyFile();
+    })
+    .then(copyFileResponse => {
+        // console.log(copyFileResponse);
+    })
+    .catch(err => {
+        // console.log(err);
+    })
 console.log(readmeData);
-    
-
-// TODO: Create function to initialize the app
-// function init(generateMarkdown) {
-//     promptQuestions();
-// }
 
 
 

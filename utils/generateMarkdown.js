@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-
 // const { fstat } = require("fs");
 // const generateMarkdown = require();
 
@@ -87,7 +86,31 @@ const generateMarkdown = readMeArr => {
     `;   
 };
 
-module.exports = generateMarkdown 
+// TODO: Create a function to write README file
+const writeFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./utils/readme.md', fileContent, err => {
+            // if there is an error, reject the Promise and send the error
+            if (err) {
+                reject(err);
+                // return our of the function to stop the process
+                return;
+            }
+
+            // if all is well, resolve the promise
+            resolve({
+                ok: true,
+                message: 'File created'
+            });
+        });
+    });
+};
+
+
+
+
+
+module.exports = generateMarkdown => {};
 
 
 // => {
