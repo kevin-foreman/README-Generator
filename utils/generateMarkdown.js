@@ -72,10 +72,10 @@ const generateMarkdown = (data) => {
 
     ## Tests
     ${data.tests}
+
     // Contact information (email address) of the developer
-    
     ## Questions
-    ${data.questions}
+    ${data.questions},
 
     }})
 
