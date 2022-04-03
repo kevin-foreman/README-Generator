@@ -1,11 +1,11 @@
 
         
     # Title
-    asdfsdaf
+    Cool Sudoku!
 
     
     ## Description
-    asdfasdfas
+    A simple application for playing a traditional Sudoku game!
     
 
     
@@ -15,29 +15,28 @@
     * [License](#license)
     * [Contributors](#contributors)
     * [Tests](#tests)
-    * [Questions](#questions) 
-    * undefined  
+    * [Questions](#questions)   
     
 
     ## Installation
-    sadfasdf
+    There is no need to install the project, it is deployed below
     
 
-    ## Usage0
-    asdfaasdsfasdf
+    ## Usage
+    Screenshot below
 
     ## License
-    MIT, Apache 2.0, GPL, GPLv3
+    GPLv3
 
     ## Contributors
-    asdfasdfs
+    None
 
     ## Tests
-    asdfsdfas
+    Tested functionality with different browsers to verify the 3 most popular browsers would support, and they do!
+
     // Contact information (email address) of the developer
-    
     ## Questions
-    asdffsdfa,
+    kevin.email,
 
     }})
 

@@ -53,8 +53,7 @@ const generateMarkdown = (data) => {
     * [License](#license)
     * [Contributors](#contributors)
     * [Tests](#tests)
-    * [Questions](#questions) 
-    * ${data.tableOfContents}  
+    * [Questions](#questions)   
     
 
     ## Installation
