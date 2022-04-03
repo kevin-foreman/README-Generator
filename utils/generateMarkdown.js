@@ -3,8 +3,8 @@
 // Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    if(license != '') {
-    return false;
+    if(license === undefined) {
+    return '';
     } else if (license == 'MIT') {
         return `
         [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)])
@@ -20,7 +20,7 @@ function renderLicenseBadge(license) {
     } else (license == 'GPLv3')
     return `
     [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
-    `
+    `;
 }
 
 // Function that returns the license link
@@ -28,10 +28,10 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     if (License != '') {
     } else if (license == 'MIT'){
-    return `
-    ## License
-    The license used for this project is [![(License)](#License)https://www.gnu.org/licenses/gpl-3.0]
-    `
+        return `
+        ## License
+        The license used for this project is [![(License)](#License)https://www.gnu.org/licenses/gpl-3.0]
+        `
     } else if (license == 'Apache 2.0') {
         return `
         ## License
@@ -43,16 +43,17 @@ function renderLicenseLink(license) {
         The license used for this project is [![(License)]https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html]
         `
     } else (license == 'GPLv3')
-    return `
-    The license used for this project is [![(License)]https://www.gnu.org/licenses/agpl-3.0]
-    `
+        return `
+        ## License
+        The license used for this project is [![(License)]https://www.gnu.org/licenses/agpl-3.0]
+        `;
 }
 
 // Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-        if(license != 'None') {
-            return ''
+    if(license != 'None') {
+        return ''
         } else 
         return `
         ## License
