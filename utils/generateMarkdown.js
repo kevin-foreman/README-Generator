@@ -53,14 +53,13 @@ function renderLicenseLink(License) {
 function renderLicenseSection(License) {
         if(license != 'None') {
             return ''
-        } else {
+        } else 
         return `
         ## License
         The license used for this project is [${License}](#License)
         `
-    }
+    
 }
-
 
 // This function should generate markdown for README
 
@@ -107,4 +106,4 @@ const generateMarkdown = (data) => {
 module.exports = {generateMarkdown};
 
 // testing License functionality
-// then License();
+// License();
