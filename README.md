@@ -1,10 +1,8 @@
 
-        
-    # Title
-    Coolest Project Ever
+    false
+    # Title README Generator
     
-    ## Description
-    This app is generating it's own README
+    ## Description Simp
         
     ## Table of Contents
     * [Installation](#installation)
@@ -14,23 +12,17 @@
     * [Tests](#tests)
     * [Questions](#questions) 
     
-    ## Installation
-    Not necessary in this case
+    ## Installation test
     
-    ## Usage
-    Screenshot added at the bottom!
+    ## Usage test
 
-    ## License(s)
-    GPLv3
+    ## License(s) MIT
 
-    ## Contributors
-    None
+    ## Contributors test
 
-    ## Tests
-    None
+    ## Tests test
 
-    // Contact information (email address & GitHub username) of the developer
-    ## Questions
-    email.email
+    // Contact information (email address & GitHub username) of the developer ## Questions test
 
+    
     

@@ -3,7 +3,7 @@
 // Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(License) {
-    if(license != '') {
+    if(License != '') {
     return false;
     } else if (License == 'MIT') {
         return `
@@ -26,7 +26,7 @@ function renderLicenseBadge(License) {
 // Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(License) {
-    if (license != '') {
+    if (License != '') {
     } else if (License == 'MIT'){
     return `
     ## License
@@ -51,7 +51,7 @@ function renderLicenseLink(License) {
 // Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(License) {
-        if(license != 'None') {
+        if(License != 'None') {
             return ''
         } else 
         return `
@@ -62,14 +62,12 @@ function renderLicenseSection(License) {
 
 // This function should generate markdown for README
 
-const generateMarkdown = (data, License) => {
+const generateMarkdown = (data) => {
     return `
-        
-    # Title
-    ${data.title}
+    ${renderLicenseBadge(data.License)}
+    # Title ${data.title}
     
-    ## Description
-    ${data.description}
+    ## Description ${data.description}
         
     ## Table of Contents
     * [Installation](#installation)
@@ -79,30 +77,21 @@ const generateMarkdown = (data, License) => {
     * [Tests](#tests)
     * [Questions](#questions) 
     
-    ## Installation
-    ${data.installation}
+    ## Installation ${data.installation}
     
-    ## Usage
-    ${data.usage}
+    ## Usage ${data.usage}
 
-    ## License(s)
-    ${data.license.join(', ')}
+    ## License(s) ${data.license.join(', ')}
 
-    ## Contributors
-    ${data.contributors}
+    ## Contributors ${data.contributors}
 
-    ## Tests
-    ${data.tests}
+    ## Tests ${data.tests}
 
-    // Contact information (email address & GitHub username) of the developer
-    ## Questions
-    ${data.questions}
+    // Contact information (email address & GitHub username) of the developer ## Questions ${data.questions}
 
+    ${renderLicenseSection(data.License)}
     `;
 }
 
 // Export to the answers from index.js
 module.exports = {generateMarkdown};
-
-// testing License functionality
-// License();
