@@ -1,10 +1,10 @@
 
         
     # Title
-    name
+    Coolest Project Ever
     
     ## Description
-    kevin
+    This app is generating it's own README
         
     ## Table of Contents
     * [Installation](#installation)
@@ -15,22 +15,22 @@
     * [Questions](#questions) 
     
     ## Installation
-    kevin
+    Not necessary in this case
     
     ## Usage
-    kevin
+    Screenshot added at the bottom!
 
     ## License(s)
-    MIT
+    GPLv3
 
     ## Contributors
-    none
+    None
 
     ## Tests
-    none
+    None
 
     // Contact information (email address & GitHub username) of the developer
     ## Questions
-    none
+    email.email
 
     

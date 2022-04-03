@@ -58,12 +58,11 @@ function renderLicenseSection(License) {
         ## License
         The license used for this project is [${License}](#License)
         `
-    
 }
 
 // This function should generate markdown for README
 
-const generateMarkdown = (data) => {
+const generateMarkdown = (data, License) => {
     return `
         
     # Title
