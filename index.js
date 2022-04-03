@@ -20,6 +20,7 @@ const promptQuestions = fileData => {
     Build your README
     =================
     `);
+    // console.log(fileData);
     return inquirer.prompt([
     {
         type: 'input',
@@ -75,7 +76,7 @@ const promptQuestions = fileData => {
         message: 'Enter any testing you have done in your project'
     },
     {
-        type: 'inpuit',
+        type: 'input',
         name: 'questions',
         message: 'Enter your email address to add a way to contact you with questions'
     }
@@ -83,7 +84,7 @@ const promptQuestions = fileData => {
   .then(readmeData => {
      fileData.push(readmeData);
         return fileData;
-
+        console.log(readmeData);
 })
 };
 

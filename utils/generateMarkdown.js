@@ -111,8 +111,11 @@ const writeFile = fileContent => {
 };
 
 
+module.exports = generateMarkdown
+
 // module.exports = generateMarkdown => { writeFile
 // const { fileData, title, description, installation, usage, license, contributors, tests, questions } = generateMarkdown;
-
-//     if (!fileData)
+//     if (!fileData) {
+//         return '';
+//     }
 // };
