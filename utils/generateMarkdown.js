@@ -5,9 +5,22 @@
 function renderLicenseBadge(License) {
     if(license != '') {
     return false;
-    } else {
-        '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg'
-    }
+    } else if (License == 'MIT') {
+        return `
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)])
+        `
+    } else if (License == 'Apache 2.0') {
+        return `
+        [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
+        `
+    } else if (License == 'GPLv2') {
+        return `
+        [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]
+        `
+    } else 
+    return `
+    [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
+    `
 }
 
 // Function that returns the license link
@@ -17,7 +30,7 @@ function renderLicenseLink(License) {
     } else {
     return `
     ## License
-    The license used for this project is [$(License)](#License)
+    The license used for this project is [$(License)](#License)https://www.gnu.org/licenses/gpl-3.0]
     `
     }
 }
@@ -40,30 +53,25 @@ const generateMarkdown = (data) => {
         
     # Title
     ${data.title}
-
     
     ## Description
     ${data.description}
-    
-
-    
+        
     ## Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
     * [License](#license)
     * [Contributors](#contributors)
     * [Tests](#tests)
-    * [Questions](#questions)   
+    * [Questions](#questions) 
     
-
     ## Installation
     ${data.installation}
     
-
     ## Usage
     ${data.usage}
 
-    ## License
+    ## License(s)
     ${data.license.join(', ')}
 
     ## Contributors
@@ -72,13 +80,15 @@ const generateMarkdown = (data) => {
     ## Tests
     ${data.tests}
 
-    // Contact information (email address) of the developer
+    // Contact information (email address & GitHub username) of the developer
     ## Questions
-    ${data.questions},
-
-    }})
+    ${data.questions}
 
     `;
 }
 
+// Export to the answers from index.js
 module.exports = {generateMarkdown};
+
+// testing License functionality
+// then License();

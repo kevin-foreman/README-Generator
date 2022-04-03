@@ -1,43 +1,36 @@
 
         
     # Title
-    Cool Sudoku!
-
+    NAME
     
     ## Description
-    A simple application for playing a traditional Sudoku game!
-    
-
-    
+    descript
+        
     ## Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
     * [License](#license)
     * [Contributors](#contributors)
     * [Tests](#tests)
-    * [Questions](#questions)   
+    * [Questions](#questions) 
     
-
     ## Installation
-    There is no need to install the project, it is deployed below
+    not necessary
     
-
     ## Usage
-    Screenshot below
+    screen shot at the bottom
 
-    ## License
-    GPLv3
+    ## License(s)
+    MIT, Apache 2.0
 
     ## Contributors
     None
 
     ## Tests
-    Tested functionality with different browsers to verify the 3 most popular browsers would support, and they do!
+    browsers
 
-    // Contact information (email address) of the developer
+    // Contact information (email address & GitHub username) of the developer
     ## Questions
-    kevin.email,
-
-    }})
+    email
 
     

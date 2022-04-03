@@ -1,10 +1,10 @@
-// Include packages needed for this application
+// Include packages needed for this application (dependencies)
 const inquirer = require('inquirer');
 const fs = require('fs');
 const {generateMarkdown} = require('./utils/generateMarkdown.js');
 
 
-// Refactor, code is too complicated
+// Refactored
 // This will create an array of questions for the application
 
 const questions = () => {
@@ -14,7 +14,7 @@ const questions = () => {
     Create your README
     ======++++++======
     `),
-    // Can't get this functino to work
+    // Start prompting questions
     inquirer.prompt([
 
         {
@@ -57,7 +57,7 @@ const questions = () => {
     {
         type: 'checkbox',
         name: 'license',
-        choices: ["MIT", "Apache 2.0", "GPL", "GPLv3"],
+        choices: ["MIT", "Apache 2.0", "GPLv2", "GPLv3"],
     },
     {
         type: 'input',
@@ -73,13 +73,14 @@ const questions = () => {
     {
         type: 'input',
         name: 'questions',
-        message: 'Enter your email address to add a way to contact you with questions'
+        message: 'Enter your email address, and your GitHub username for a way to contact you with questions.'
     }
     // console.log(questions);
     ])
+    // Function to write README file
     .then((answers) => {
-        console.log(generateMarkdown(answers))
-        console.log(answers);  
+        // console.log(generateMarkdown(answers))
+        // console.log(answers);  
         fs.writeFile('README.md', generateMarkdown(answers),
 
     function(err) {
@@ -92,17 +93,5 @@ const questions = () => {
     })
 };
 
-
-// Function to write README file
-
-
-
 // function to initialize the app
-// testing different methods
-function init(questions) {
-    // inquirer.prompt(questions);
-    // .then((inquirerResponse, data) => {
-        console.log("inquirer test");
-    // })
-};
 questions();
