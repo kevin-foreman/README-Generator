@@ -1,11 +1,10 @@
-// Include packages needed for this application
+// Refactor, code is too complicated
+
+// Dependencies
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateFile = require('./utils/generateMarkdown.js');
 
-
-// Refactor, code is too complicated
-// This will create an array of questions for the application
 
 const questions = [
 
@@ -67,20 +66,4 @@ const questions = [
         name: 'questions',
         message: 'Enter your email address to add a way to contact you with questions'
     }
-    // console.log(questions);
 ];
-
-// Function to write README file
-function writeToFile(generateMarkdown, data) {
-    return;
-}
-
-
-// function to initialize the app
-function init(data) {
-    
-}
-
-
-
-// console.log(questions.title);
