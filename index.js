@@ -1,7 +1,7 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateFile = require('./utils/generateMarkdown.js');
+const {generateMarkdown} = require('./utils/generateMarkdown.js');
 
 
 // Refactor, code is too complicated
@@ -15,7 +15,7 @@ const questions = () => {
     ======++++++======
     `),
     // Can't get this functino to work
-    // return inquirer.prompt([
+    inquirer.prompt([
 
         {
         type: 'input',
@@ -76,20 +76,26 @@ const questions = () => {
         message: 'Enter your email address to add a way to contact you with questions'
     }
     // console.log(questions);
-    // ]);
-};
-
-// Function to write README file
-
-fs.writeFile('README.md', 'generateFile',
+    ])
+    .then((answers) => {
+        console.log(generateMarkdown(answers))
+        console.log(answers);  
+        fs.writeFile('README.md', generateMarkdown(answers),
 
     function(err) {
         if (err) throw err;
 
         // if no error
-        console.log("Data written successfully")
+        // console.log("Data written successfully")
         return;
-    });
+    });     
+    })
+};
+
+
+// Function to write README file
+
+
 
 // function to initialize the app
 // testing different methods
@@ -99,4 +105,4 @@ function init(questions) {
         console.log("inquirer test");
     // })
 };
-init(questions);
+questions();

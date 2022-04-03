@@ -1,4 +1,5 @@
 
+
 // Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(License) {
@@ -36,24 +37,29 @@ function renderLicenseSection(License) {}
 
 const generateMarkdown = (data) => {
     return `
-    
+        
     # Title
     ${data.title}
 
+    
     ## Description
     ${data.description}
+    
 
+    
     ## Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
     * [License](#license)
     * [Contributors](#contributors)
     * [Tests](#tests)
-    * [Questions](#questions)   
-    ${data.tableOfContents}
+    * [Questions](#questions) 
+    * ${data.tableOfContents}  
+    
 
     ## Installation
     ${data.installation}
+    
 
     ## Usage
     ${data.usage}
@@ -67,9 +73,13 @@ const generateMarkdown = (data) => {
     ## Tests
     ${data.tests}
     // Contact information (email address) of the developer
+    
     ## Questions
     ${data.questions}
+
     }})
-    ${generateMarkdown(data)} 
+
     `;
 }
+
+module.exports = {generateMarkdown};
