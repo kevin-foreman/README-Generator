@@ -7,9 +7,17 @@ const generateFile = require('./utils/generateMarkdown.js');
 // Refactor, code is too complicated
 // This will create an array of questions for the application
 
-const questions = [
+const questions = () => {
 
-    {
+    console.log(`
+    ======++++++======
+    Create your README
+    ======++++++======
+    `),
+    // Can't get this functino to work
+    // return inquirer.prompt([
+
+        {
         type: 'input',
         name: 'title',
         message: 'What is the name of the project?',
@@ -68,7 +76,8 @@ const questions = [
         message: 'Enter your email address to add a way to contact you with questions'
     }
     // console.log(questions);
-];
+    // ]);
+};
 
 // Function to write README file
 
@@ -81,13 +90,13 @@ fs.writeFile('README.md', 'generateFile',
         console.log("Data written successfully")
         return;
     });
-    
 
 // function to initialize the app
-function init(data) {
-    
-}
-
-
-
-// console.log(questions.title);
+// testing different methods
+function init(questions) {
+    // inquirer.prompt(questions);
+    // .then((inquirerResponse, data) => {
+        console.log("inquirer test");
+    // })
+};
+init(questions);
