@@ -71,10 +71,17 @@ const questions = [
 ];
 
 // Function to write README file
-function writeToFile(generateMarkdown, data) {
-    return;
-}
 
+fs.writeFile('README.md', 'generateFile',
+
+    function(err) {
+        if (err) throw err;
+
+        // if no error
+        console.log("Data written successfully")
+        return;
+    });
+    
 
 // function to initialize the app
 function init(data) {
