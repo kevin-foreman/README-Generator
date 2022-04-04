@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
     if(license === undefined) {
     return '';
     } else if (license == 'MIT') {
-        return ![GitHub license](https://img.shields.io/badge/license-$[license]-yellow.svg)`;`
+        return ![GitHub license](https://img.shields.io/badge/license-$[license]-blue.svg)`;`
 
     } else if (license == 'Apache 2.0') {
         return ![License Apache 2.0](https://img.shields.io/badge/License-$[license]-blue.svg)`;`
