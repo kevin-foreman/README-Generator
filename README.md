@@ -1,10 +1,11 @@
 
-    ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
+    ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+    
     # Title
-    NAME
+    Really Cool Project
     
     ## Description
-    PROJECT
+    Simple app does simple things
         
     ## Table of Contents
     * [Installation](#installation)
@@ -15,10 +16,10 @@
     * [License](#license) 
     
     ## Installation
-    INSTRUCTIONS
+    Install NPM and Inquirer for the prompts
     
     ## Usage
-    GOT IT
+    Screenshot added below
 
     ## Contributors
     None
@@ -28,10 +29,10 @@
 
     Contact information (email address & GitHub username) of the developer
     ## Questions
-    LINK HERE
+    email.email@email.email
 
     ## License(s)
-    GPLv2
+    GPLv3
     
         The license used for this project is [{License}](#license)
         
