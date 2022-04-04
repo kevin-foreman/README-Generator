@@ -7,7 +7,7 @@
 Professional README Generator
 
 ## Description
-This application generates a dynamix README.MD file based on a user's input.
+This application generates a dynamic README.MD file based on a user's input.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,7 +18,7 @@ This application generates a dynamix README.MD file based on a user's input.
 * [License](#license) 
 
 ## Installation
-Step 1. Install Node Package Manaer (NPM). Step 2. Initialize NPM from the root directory of the project you are working in. Finally install the inquirer module with "NPM i inquirer." 
+Step 1. Install Node Package Manaer (NPM). Step 2. Initialize NPM from the root directory of the project you are working in. Finally install the inquirer module with "NPM i inquirer."
 
 ## Usage
 Use case scenario would be for any project on GitHub to create a professional looking README in seconds.
