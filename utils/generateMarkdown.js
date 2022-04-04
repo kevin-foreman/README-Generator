@@ -14,7 +14,7 @@ function renderLicenseBadge(license) {
     
     } else (license == 'GPLv3')
         return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
-}
+};
 
 // Function that returns the license link
 // If there is no license, return an empty string
@@ -41,7 +41,7 @@ function renderLicenseLink(license) {
         ## License
         The license used for this project is [![(License)](#license)](https://www.gnu.org/licenses/agpl-3.0)
         `;
-}
+}:
 
 // Function that returns the license section of README
 // If there is no license, return an empty string
@@ -52,7 +52,7 @@ function renderLicenseSection(license) {
         return `
         The license used for this project is [{License}](#license)
         `
-}
+};
 
 // This function should generate markdown for README
 
@@ -93,7 +93,7 @@ const generateMarkdown = (data) => {
     ${data.license.join(', ')}
     ${renderLicenseSection(data.license)}
     `;
-}
+};
 
 // Export to the answers from index.js
 module.exports = {generateMarkdown};
