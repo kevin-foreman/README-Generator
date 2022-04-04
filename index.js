@@ -63,7 +63,6 @@ const questions = () => {
         type: 'input',
         name: 'contributors',
         message: 'Identify contributors here, if any'
-        // default: false
     },
     {
         type: 'input',
@@ -75,19 +74,18 @@ const questions = () => {
         name: 'questions',
         message: 'Enter your email address, and your GitHub username for a way to contact you with questions.'
     }
-    // console.log(questions);
+    
     ])
     // Function to write README file
     .then((answers) => {
-        // console.log(generateMarkdown(answers))
-        // console.log(answers);  
+         
         fs.writeFile('README.md', generateMarkdown(answers),
 
     function(err) {
         if (err) throw err;
 
         // if no error
-        // console.log("Data written successfully")
+        console.log("README successfully created!")
         return;
     });     
     })

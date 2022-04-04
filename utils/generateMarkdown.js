@@ -15,7 +15,7 @@ function renderLicenseBadge(license) {
     } else (license == 'GPLv3')
         return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
 };
-// ${renderLicenseBadge(data.license)};
+
 
 // Function that returns the license link
 // If there is no license, return an empty string
