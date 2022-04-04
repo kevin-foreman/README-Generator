@@ -4,16 +4,16 @@ function renderLicenseBadge(license) {
     if(license === undefined) {
     return '';
     } else if (license == 'MIT') {
-        return `![GitHub license](https://img.shields.io/badge/license-$[license]-yellow.svg)`;
+        return `![MIT license](https://img.shields.io/badge/License-$[license]-yellow.svg)`;
 
     } else if (license == 'Apache 2.0') {
         return `![License Apache 2.0](https://img.shields.io/badge/License-$[license]-blue.svg)`;
     
     } else if (license == 'GPLv2') {
-        return `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`;
+        return `![License: GPL v2](https://img.shields.io/badge/License-$[license]-blue.svg)`;
     
     } else (license == 'GPLv3')
-        return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+        return `![License: GPL v3](https://img.shields.io/badge/License-$[license]-blue.svg)`;
 };
 
 
@@ -24,35 +24,34 @@ function renderLicenseLink(license) {
     return '';
     } else if (license == 'MIT'){
         return `
-        ## License
-        The license used for this project is [(License)](#License)](https://www.gnu.org/licenses/gpl-3.0)
+## License
+The license used for this project is [(License)](#license)](https://www.gnu.org/licenses/gpl-3.0)
         `
     } else if (license == 'Apache 2.0') {
         return `
-        ## License
-        The license used for this project is [(License)](#License)](https://opensource.org/licenses/MIT)
+## License
+The license used for this project is [(License)](#license)](https://opensource.org/licenses/MIT)
         `
     } else if (license == 'GPLv2') {
         return `
-        ## License
-        The license used for this project is [(License)](#license)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+## License
+The license used for this project is [(License)](#license)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
         `
     } else (license == 'GPLv3')
         return `
-        ## License
-        The license used for this project is [![(License)](#license)](https://www.gnu.org/licenses/agpl-3.0)
+## License
+The license used for this project is [![(License)](#license)](https://www.gnu.org/licenses/agpl-3.0)
         `;
 }
 
 // Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-    if(license === undefined) {
-        return '';
-        } else 
-        return `
-The license used for this project is [{License}](#license)
-        `
+    if(license != undefined) {
+        return`
+The license used for this project is ${license}
+`
+}
 };
 
 // This function should generate markdown for README
@@ -98,4 +97,4 @@ ${renderLicenseSection(data.license)}
 };
 
 // Export to the answers from index.js
-module.exports = {generateMarkdown};
+module.exports = {generateMarkdown}

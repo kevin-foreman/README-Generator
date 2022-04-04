@@ -1,11 +1,11 @@
 
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![License: GPL v2](https://img.shields.io/badge/License-$[license]-blue.svg)
 
 # Title
-KAKAK
+kasjdas;dljf
 
 ## Description
-KKAKAK
+asdlkfj;alskd
 
 ## Table of Contents
 * [Installation](#installation)
@@ -16,23 +16,23 @@ KKAKAK
 * [License](#license) 
 
 ## Installation
-AKKAKA
+asdflkas;df
 
 ## Usage
-JJDJD
+asdfasd
 
 ## Contributors
-YDYDY
+jsakldjf
 
 ## Tests
-DHHDGB
+asdkfj;as
 
 Contact information (email address & GitHub username) of the developer
 ## Questions
-GBDBEBE
+aklsdjf;
 
 ## License
-GPLv3
+GPLv2
 
-The license used for this project is [{License}](#license)
-        
+The license used for this project is GPLv2
+
