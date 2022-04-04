@@ -4,16 +4,16 @@ function renderLicenseBadge(license) {
     if(license === undefined) {
     return '';
     } else if (license == 'MIT') {
-        return ![GitHub license](https://img.shields.io/badge/license-$[license]-blue.svg)`;`
+        return `![GitHub license](https://img.shields.io/badge/license-$[license]-yellow.svg)`;
 
     } else if (license == 'Apache 2.0') {
-        return ![License Apache 2.0](https://img.shields.io/badge/License-$[license]-blue.svg)`;`
+        return `![License Apache 2.0](https://img.shields.io/badge/License-$[license]-blue.svg)`;
     
     } else if (license == 'GPLv2') {
-        return ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`;`
+        return `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`;
     
     } else (license == 'GPLv3')
-        return ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;`
+        return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
 }
 
 // Function that returns the license link
