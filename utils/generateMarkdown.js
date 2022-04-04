@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
         return ![GitHub license](https://img.shields.io/badge/license-$[license]-yellow.svg)`;`
 
     } else if (license == 'Apache 2.0') {
-        return ![License Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;`
+        return ![License Apache 2.0](https://img.shields.io/badge/License-$[license]-blue.svg)`;`
     
     } else if (license == 'GPLv2') {
         return ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`;`
