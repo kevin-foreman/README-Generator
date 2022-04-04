@@ -59,42 +59,42 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(data){
     return `
-    ${renderLicenseBadge(data.license)}
-    
-    # Title
-    ${data.title}
-    
-    ## Description
-    ${data.description}
-        
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributors](#contributors)
-    * [Tests](#tests)
-    * [Questions](#questions)
-    * [License](#license) 
-    
-    ## Installation
-    ${data.installation}
-    
-    ## Usage
-    ${data.usage}
+${renderLicenseBadge(data.license)}
 
-    ## Contributors
-    ${data.contributors}
+# Title
+${data.title}
 
-    ## Tests
-    ${data.tests}
+## Description
+${data.description}
 
-    Contact information (email address & GitHub username) of the developer
-    ## Questions
-    ${data.questions}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributors](#contributors)
+* [Tests](#tests)
+* [Questions](#questions)
+* [License](#license) 
 
-    ## License(s)
-    ${data.license.join(', ')}
-    ${renderLicenseSection(data.license)}
-    `;
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Contributors
+${data.contributors}
+
+## Tests
+${data.tests}
+
+Contact information (email address & GitHub username) of the developer
+## Questions
+${data.questions}
+
+## License(s)
+${data.license.join(', ')}
+${renderLicenseSection(data.license)}
+`;
 };
 
 // Export to the answers from index.js
