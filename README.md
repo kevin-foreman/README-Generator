@@ -4,10 +4,10 @@
 
 
 # Title
-Cool Sudoku
+Professional README Generator
 
 ## Description
-Simple web app to play Sudoku
+This application generates a dynamix README.MD file based on a user's input.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,10 +18,10 @@ Simple web app to play Sudoku
 * [License](#license) 
 
 ## Installation
-Install NPM, then initialize it. Then install inquirer.
+Step 1. Install Node Package Manaer (NPM). Step 2. Initialize NPM from the root directory of the project you are working in. Finally install the inquirer module with "NPM i inquirer." 
 
 ## Usage
-Fun and Liesure, screenshot below
+Use case scenario would be for any project on GitHub to create a professional looking README in seconds.
 
 ## Contributors
 None
@@ -31,7 +31,7 @@ None
 
 Contact information (email address & GitHub username) of the developer
 ## Questions
-kevin.o.foreman2@gmail.com, kevin-foreman
+kevin.o.foreman2@gmail.com // www.github.com/kevin-foreman
 
 ## License
 
