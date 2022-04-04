@@ -16,8 +16,8 @@ function renderLicenseBadge(license) {
         ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
         `
     } else (license == 'GPLv3')
-    return `
-    ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+        return `
+        ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
     `;
 }
 
