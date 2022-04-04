@@ -1,38 +1,40 @@
 
     
-        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)])
+        ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
         
     # Title
-    Project
+    TEST 5
     
     ## Description
-    Test
+    5
         
     ## Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
-    * [License](#license)
     * [Contributors](#contributors)
     * [Tests](#tests)
-    * [Questions](#questions) 
+    * [Questions](#questions)
+    * [License](#license) 
     
     ## Installation
-    test
+    5
     
     ## Usage
-    test
+    5
+
+    ## Contributors
+    5
+
+    ## Tests
+    5
+
+    // Contact information (email address & GitHub username) of the developer ## Questions
+    5
 
     ## License(s)
     MIT
-
-    ## Contributors
-    none
-
-    ## Tests
-    none
-
-    // Contact information (email address & GitHub username) of the developer ## Questions
-    none
-
     
+        ## License
+        The license used for this project is ![{License}](#license)
+        
     
