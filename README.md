@@ -1,12 +1,12 @@
 
     
-        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)])
-    # Actual Title    
+        ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
+        
     # Title
-    TEST 5
+    NEW TEST 8
     
     ## Description
-    5
+    8
         
     ## Table of Contents
     * [Installation](#installation)
@@ -17,21 +17,24 @@
     * [License](#license) 
     
     ## Installation
-    5
+    8
     
     ## Usage
-    5
+    8
 
     ## Contributors
-    5
+    8
 
     ## Tests
-    5
+    8
 
-    // Contact information (email address & GitHub username) of the developer ## Questions
-    5
+    Contact information (email address & GitHub username) of the developer
+    ## Questions
+    8
 
     ## License(s)
-    MIT
+    GPLv2
     
+        The license used for this project is [{License}](#license)
+        
     

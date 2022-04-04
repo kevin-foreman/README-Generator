@@ -9,15 +9,15 @@ function renderLicenseBadge(license) {
         `
     } else if (license == 'Apache 2.0') {
         return `
-        [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
+        ![License Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
         `
     } else if (license == 'GPLv2') {
         return `
-        [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]
+        ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
         `
     } else (license == 'GPLv3')
     return `
-    [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
+    ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
     `;
 }
 
@@ -29,22 +29,22 @@ function renderLicenseLink(license) {
     } else if (license == 'MIT'){
         return `
         ## License
-        The license used for this project is [![(License)](#License)(https://www.gnu.org/licenses/gpl-3.0)]
+        The license used for this project is [(License)](#License)](https://www.gnu.org/licenses/gpl-3.0)
         `
     } else if (license == 'Apache 2.0') {
         return `
         ## License
-        The license used for this project is [![(License)](#License)(https://opensource.org/licenses/MIT)]
+        The license used for this project is [(License)](#License)](https://opensource.org/licenses/MIT)
         `
     } else if (license == 'GPLv2') {
         return `
         ## License
-        The license used for this project is [![(License)](#license)(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)]
+        The license used for this project is [(License)](#license)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
         `
     } else (license == 'GPLv3')
         return `
         ## License
-        The license used for this project is [![(License)](#license)(https://www.gnu.org/licenses/agpl-3.0)]
+        The license used for this project is [![(License)](#license)](https://www.gnu.org/licenses/agpl-3.0)
         `;
 }
 
@@ -55,8 +55,7 @@ function renderLicenseSection(license) {
         return '';
         } else 
         return `
-        ## License
-        The license used for this project is ![{License}](#license)
+        The license used for this project is [{License}](#license)
         `
 }
 
@@ -91,7 +90,8 @@ const generateMarkdown = (data) => {
     ## Tests
     ${data.tests}
 
-    // Contact information (email address & GitHub username) of the developer ## Questions
+    Contact information (email address & GitHub username) of the developer
+    ## Questions
     ${data.questions}
 
     ## License(s)
