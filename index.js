@@ -78,7 +78,7 @@ const questions = () => {
     ])
     // Function to write README file
     .then((answers) => {
-         
+
         fs.writeFile('README.md', generateMarkdown(answers),
 
     function(err) {

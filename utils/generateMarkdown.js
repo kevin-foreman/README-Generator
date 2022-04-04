@@ -51,7 +51,7 @@ function renderLicenseSection(license) {
         return '';
         } else 
         return `
-        The license used for this project is [{License}](#license)
+The license used for this project is [{License}](#license)
         `
 };
 
