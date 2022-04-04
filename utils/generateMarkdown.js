@@ -91,7 +91,7 @@ Contact information (email address & GitHub username) of the developer
 ## Questions
 ${data.questions}
 
-## License(s)
+## License
 ${data.license.join(', ')}
 ${renderLicenseSection(data.license)}
 `;

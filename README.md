@@ -1,11 +1,11 @@
 
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![GitHub license](https://img.shields.io/badge/license-$[license]-yellow.svg)
 
 # Title
-NAME
+COOL NAME
 
 ## Description
-DESCRIOP
+KEVIN MADE THIS
 
 ## Table of Contents
 * [Installation](#installation)
@@ -16,23 +16,23 @@ DESCRIOP
 * [License](#license) 
 
 ## Installation
-INSTALL
+INSTALL NPM
 
 ## Usage
-COOL PIC
+USED FOR README, SCREENSHOT ADDED BELOW
 
 ## Contributors
-None
+NONE
 
 ## Tests
-None
+NONE
 
 Contact information (email address & GitHub username) of the developer
 ## Questions
-kevin-foreman, email@email
+Email, GitHub
 
-## License(s)
-GPLv3
+## License
+MIT
 
         The license used for this project is [{License}](#license)
         
