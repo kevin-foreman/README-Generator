@@ -1,7 +1,7 @@
 
     
-        ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-        
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)])
+    # Actual Title    
     # Title
     TEST 5
     
@@ -34,7 +34,4 @@
     ## License(s)
     MIT
     
-        ## License
-        The license used for this project is ![{License}](#license)
-        
     
