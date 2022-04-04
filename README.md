@@ -2,10 +2,10 @@
     ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
     
     # Title
-    README Generator
+    Coolest test ever
     
     ## Description
-    Simple Node.js application to generate an actual README file for any project
+    Brief description for test
         
     ## Table of Contents
     * [Installation](#installation)
@@ -16,10 +16,10 @@
     * [License](#license) 
     
     ## Installation
-    Install NPM and initialize it. Then install the package "inquirer" from NPM. See documentation for more details
+    Install stuff
     
     ## Usage
-    Screenshot added below
+    Used for generating README, screenshot saved below
 
     ## Contributors
     None
@@ -29,7 +29,7 @@
 
     Contact information (email address & GitHub username) of the developer
     ## Questions
-    email.email@email
+    kevin@email, kevin-foreman
 
     ## License(s)
     GPLv3
