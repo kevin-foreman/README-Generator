@@ -19,7 +19,8 @@ This application generates a dynamic README.MD file based on a user's input.
 
 ## Installation
 Step 1. Rename the README.md of this repo to something other than README.md, so you don't over-write it.
-Step 2. Install Node Package Manaer (NPM). Step 2. Initialize NPM from the root directory of the project you are working in with 'NPM install'. Finally, run node index.js.
+Step 2. Install Node Package Manaer (NPM).
+Step 3. Finally, run node index.js.
 
 ## Usage
 Use case scenario would be for any project on GitHub to create a professional looking README in seconds.
