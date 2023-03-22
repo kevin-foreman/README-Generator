@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kevin-foreman/README-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.2"
+    "inquirer": "^8.2.5",
+    "make": "^0.8.1"
   }
 }
