@@ -68,8 +68,7 @@ function generateMarkdown(data) {
     return `
 ${renderLicenseBadge(data.license)}
 
-# Title
-${data.title}
+# ${data.title}
 
 ## Description
 ${data.description}
@@ -77,6 +76,7 @@ ${data.description}
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Screenshot](#screenshot)
 * [Contributors](#contributors)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -87,6 +87,9 @@ ${data.installation}
 
 ## Usage
 ${data.usage}
+
+## Screenshot
+${data.screenshot}
 
 ## Contributors
 ${data.contributors}
@@ -104,4 +107,4 @@ ${renderLicenseSection(data.license)}
 };
 
 // Export to the answers from index.js
-module.exports = {generateMarkdown}
+export { generateMarkdown };

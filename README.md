@@ -9,6 +9,7 @@ This application generates a dynamic README.MD file based on a user's input.
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Screenshot](#screenshot) 
 * [Contributors](#contributors)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -22,6 +23,9 @@ Step 4. Finally, run 'node index.js' to start the CLI application in your termin
 
 ## Usage
 Use case scenario would be for any project on GitHub to create a professional looking README in seconds.
+
+## Screenshot
+<![alt text](assets/images/readme-screenshot.png)>
 
 ## Contributors
 None

@@ -1,7 +1,8 @@
 // Include packages needed for this application (dependencies)
-const inquirer = require('inquirer');
-const fs = require('fs');
-const {generateMarkdown} = require('./utils/generateMarkdown.js');
+import pkg from 'inquirer';
+const { prompt } = pkg;
+import { writeFile } from 'fs';
+import { generateMarkdown } from './utils/generateMarkdown.js';
 
 
 // Refactored
@@ -15,7 +16,7 @@ const questions = () => {
     ======++++++======
     `),
     // Start prompting questions
-    inquirer.prompt([
+    prompt([
 
         {
         type: 'input',
@@ -52,7 +53,12 @@ const questions = () => {
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for use. Add screenshots as necessary. To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath add it to your README using the following syntax: <![alt text](assets/images/screenshot.png)'
+        message: 'Provide instructions and examples for use.'
+    },
+    {
+        type: 'input',
+        name: 'screenshot',
+        message: 'Make a note of this step, you will not input anything here, but if you want to add a screenshot to your project do the following: create an `assets/images` folder to your project inside the root folder, and upload your screenshot to it. Place this line of code in your README to link to the file <![alt text](assets/images/your-screenshot.png)>.'
     },
     {
         type: 'checkbox',
@@ -79,7 +85,7 @@ const questions = () => {
     // Function to write README file
     .then((answers) => {
 
-        fs.writeFile('README.md', generateMarkdown(answers),
+        writeFile('README.md', generateMarkdown(answers),
 
     function(err) {
         if (err) throw err;
