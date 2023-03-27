@@ -25,7 +25,7 @@ Step 4. Finally, run 'node index.js' to start the CLI application in your termin
 Use case scenario would be for any project on GitHub to create a professional looking README in seconds.
 
 ## Screenshot
-<![alt text](assets/images/readme-screenshot.png)>
+![alt text](assets/images/readme-screenshot.png)
 
 ## Contributors
 None
